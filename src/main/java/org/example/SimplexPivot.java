@@ -1,4 +1,5 @@
 package org.example;
+
 import org.apache.commons.math3.fraction.BigFraction;
 
 public class SimplexPivot {
@@ -36,17 +37,4 @@ public class SimplexPivot {
         }
     }
 
-    public static BigFraction[][] convertToFractionMatrix(double[][] matrix) {
-        int numRows = matrix.length;
-        int numCols = matrix[0].length;
-        BigFraction[][] fractionMatrix = new BigFraction[numRows][numCols];
-
-        for (int i = 0; i < numRows; i++) {
-            for (int j = 0; j < numCols; j++) {
-                fractionMatrix[i][j] = new BigFraction(matrix[i][j]);
-            }
-        }
-
-        return fractionMatrix;
-    }
 }
